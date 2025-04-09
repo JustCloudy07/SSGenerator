@@ -4,8 +4,8 @@ import sys
 
 
 def main():
-    if sys.argv[0] != None:
-        basepath = sys.argv[0]
+    if len(sys.argv) > 1:
+        basepath = sys.argv[1]
     else:
         basepath = "/"
     Copy_Static()
