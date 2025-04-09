@@ -4,7 +4,7 @@ from pathlib import Path
 
 def main():
     Copy_Static()
-    generate_pages_recursive("content", "template.html", "public")
+    generate_pages_recursive("content", "template.html", "docs")
 
 
 main()

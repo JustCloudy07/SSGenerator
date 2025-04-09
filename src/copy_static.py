@@ -8,10 +8,10 @@ from blocks_features import markdown_to_html_node
 
 def Copy_Static(
     parent_directory=Path(__file__).parent.parent / "static",
-    destination_path=Path(__file__).parent.parent / "public",
+    destination_path=Path(__file__).parent.parent / "docs",
     isClean=False,
 ):
-    if (os.path.exists(Path(__file__).parent.parent / "public")) and isClean == False:
+    if (os.path.exists(Path(__file__).parent.parent / "docs")) and isClean == False:
         shutil.rmtree(destination_path)
         os.mkdir(destination_path)
         isClean = True
